@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  >
+<listeners>
+<listener class-name="com.vedban.genericLibrary.ListenerImplimentation"/>
+</listeners>
+  <test thread-count="5" name="Test" >
+   <parameter name="browser" value="chrome"/>
+   <parameter name="url" value="http://122.166.192.191:9001/"/>
+    <classes>
+      <class name="org.vedban.customer.CheckAmountbalance">
+      <parameter name="username" value="customer"/>
+      <parameter name="password" value="customer"/>
+      <methods>
+      <include name="checkAmountbalance"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
