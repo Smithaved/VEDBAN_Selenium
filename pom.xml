@@ -44,7 +44,7 @@
 						<version>2.20</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng.xml</suiteXmlFile>
+								<suiteXmlFile>testng_customer.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
